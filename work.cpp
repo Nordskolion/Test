@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <iostream> 
 #include <math.h>
-struct Vektor
+struct Vektor 
     {
         float x;
         float y;
         float z;
     };
 
-Vektor GetVektor()
+Vektor GetVektor() // Функция создания вектора 
 {
     Vektor TL;
     printf("input X: ");
@@ -22,14 +22,14 @@ Vektor GetVektor()
     return TL;
 }
 
-Vektor ShowVektor(Vektor TL)
+Vektor ShowVektor(Vektor TL) // отобразить вектор 
 {
     printf("%f\n",TL.x);
     printf("%f\n",TL.y);
     printf("%f\n",TL.z);
     return TL;
 }
-float LenVektor(Vektor TL)
+float LenVektor(Vektor TL) // Длина векторов 
 {
     float F;
     float x=TL.x;
@@ -39,7 +39,7 @@ float LenVektor(Vektor TL)
     //printf("Hellow\n");
     return F;
 }
-Vektor SumVektor(Vektor TL, Vektor TS)
+Vektor SumVektor(Vektor TL, Vektor TS) // Сумма Векторов 
 {
     Vektor PL;
     PL.x=TL.x+TS.x;
@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
    //Vektor PL;
     int ii;
     
-   while(1)
+   while(1) // Основной цикл 
    {
        
        printf("press 1 to Summa\n");
@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
        printf("Ok\n");
        scanf("%d", &ii);
        printf("eto ii---> %d\n", ii);
-       switch (ii)
+       switch (ii)   // Менюшка 
        {
            case 1:
                printf("Summa\n");
