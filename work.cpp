@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
    //Vektor PL;
     int ii;
     
-   while(1>0)
+   while(1)
    {
        
        printf("press 1 to Summa\n");
